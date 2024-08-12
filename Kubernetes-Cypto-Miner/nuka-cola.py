@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import time
 
 flavors = ["Nuka-Cola", "Diet Nuka-Cola", "New-Nuka", "Nuka-Cola Cranberry", "Nuka-Grape", "Nuka-Cola Orange", "Nuka-Cherry", "Nuka-Cola Quantum", "Nuka-Cola Victory", "Nuka-Cola Dark"]
