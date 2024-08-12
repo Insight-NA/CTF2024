@@ -6,7 +6,7 @@
 #   |#||                              |
 #   |#||                              |
 #   |#||                              |
-#   |#||   Irradiated-Super-Puppy     |
+#   |#|| CTF{Irradiated-Super-Puppy}  |
 #   |#||                              |
 #   |#||                              |
 #   |#||                              |
